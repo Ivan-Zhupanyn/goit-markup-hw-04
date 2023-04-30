@@ -121,7 +121,7 @@ img {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  background-size: contain;
+  background-size: cover;
 }
 .hero-title {
   margin-right: auto;
@@ -169,6 +169,12 @@ img {
 .feature {
   width: calc((100% - 72px) / 4);
 }
+.feature-block {
+  padding: 24px 100px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
@@ -206,6 +212,7 @@ img {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 .team-title {
   font-weight: 700;
@@ -272,15 +279,64 @@ img {
 .socials-link:focus {
   background: #404bbf;
 }
-
 .socials-icon {
   fill: #f4f4fd;
 }
+/* Customers section 5 */
+.customers {
+  margin-bottom: 120px;
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11em;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--heading-text-color);
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-link {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+  fill: #404bbf;
+}
+.customers-icon {
+  fill: #8e8f99;
+}
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: #404bbf;
+}
 /* Footer */
+
+.footer-all {
+  display: flex;
+}
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.text-footer {
+  display: inline-block;
 }
 .footer-logo-web {
   font-family: 'Raleway', sans-serif;
@@ -304,6 +360,53 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+/* Socilals footer */
+
+.social-footer {
+  width: 208px;
+  height: 80px;
+  margin-left: 120px;
+  display: inline-block;
+}
+
+.social-footer-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-footer-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4d5ae5;
+  border-radius: 50%;
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background: #31d0aa;
+}
+.social-footer-icon {
+  fill: #f4f4fd;
 }
 /* Portfolio filters*/
 
@@ -357,6 +460,12 @@ img {
   width: calc((100% - 48px) / 3);
   height: 420px;
   background: #ffffff;
+}
+.portfolio-cards:hover,
+.portfolio-cards:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-card-content {
   padding-top: 32px;
