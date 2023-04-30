@@ -8,6 +8,9 @@ body {
   --main-text-color: #434455;
   --heading-text-color: #2e2f42;
   --filter-btn-text-color: #4d5ae5;
+  --icons-basic-color: #8e8f99;
+  --white-color: #ffffff;
+  --icons-social-color: #f4f4fd;
 }
 h1,
 h2,
@@ -40,6 +43,8 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .new-head {
   display: flex;
@@ -170,8 +175,12 @@ img {
   width: calc((100% - 72px) / 4);
 }
 .feature-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   padding: 24px 100px;
-  background: #f4f4fd;
+  background: var(--icons-social-color);
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -209,10 +218,9 @@ img {
 }
 /* Our Team section 4*/
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--icons-social-color);
   padding-top: 120px;
   padding-bottom: 120px;
-  margin-bottom: 120px;
 }
 .team-title {
   font-weight: 700;
@@ -237,7 +245,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: 32px;
 }
 .team-card-title {
   font-weight: 500;
@@ -280,16 +288,17 @@ img {
   background: #404bbf;
 }
 .socials-icon {
-  fill: #f4f4fd;
+  fill: var(--icons-social-color);
 }
 /* Customers section 5 */
 .customers {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .customers-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11em;
+  line-height: 1.1em;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -311,32 +320,30 @@ img {
   justify-content: center;
   align-items: center;
   padding: 16px 32px;
+  color: var(--icons-basic-color);
 }
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid #404bbf;
+  color: #404bbf;
   border-radius: 4px;
-  fill: #404bbf;
 }
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: #404bbf;
-}
+
 /* Footer */
 
-.footer-all {
-  display: flex;
-}
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  align-items: baseline;
 }
 .text-footer {
   display: inline-block;
+  margin-right: 120px;
 }
 .footer-logo-web {
   font-family: 'Raleway', sans-serif;
@@ -351,7 +358,7 @@ img {
   margin-bottom: 16px;
 }
 .footer-logo-studio {
-  color: #f4f4fd;
+  color: var(--icons-social-color);
 }
 .footer-desc {
   max-width: 264px;
@@ -359,14 +366,13 @@ img {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--icons-social-color);
 }
 /* Socilals footer */
 
 .social-footer {
   width: 208px;
   height: 80px;
-  margin-left: 120px;
   display: inline-block;
 }
 
@@ -375,15 +381,10 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 16px;
-}
-.social-footer-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .social-footer-list {
   display: flex;
@@ -391,22 +392,28 @@ img {
   align-items: center;
   gap: 16px;
 }
-
-.social-footer-link {
+.social-footer-item {
   width: 40px;
   height: 40px;
+}
+.social-footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #4d5ae5;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--filter-btn-text-color);
 }
 .social-footer-link:hover,
 .social-footer-link:focus {
   background: #31d0aa;
 }
 .social-footer-icon {
-  fill: #f4f4fd;
+  fill: var(--icons-social-color);
 }
 /* Portfolio filters*/
 
@@ -426,7 +433,7 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   font-family: inherit;
-  background: #f4f4fd;
+  background: var(--icons-social-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   font-weight: 500;
@@ -463,7 +470,7 @@ img {
 }
 .portfolio-cards:hover,
 .portfolio-cards:focus {
-  border: 1px solid #f4f4fd;
+  border: 1px solid var(--icons-social-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
